@@ -30,7 +30,7 @@ RUN mkdir /opt/xml && mkdir /opt/notes && \
 
 RUN pip3 install Django requests xmltodict && \
     cd /opt/ && django-admin startproject nmapdashboard && cd /opt/nmapdashboard && \
-    git clone https://github.com/Rev3rseSecurity/WebMap.git nmapreport && \
+    git clone https://jsoComputocell@bitbucket.org/jsoComputocell/webmap.git nmapreport && \
     cd nmapreport && git checkout v2.2/master
 
 COPY settings.py /opt/nmapdashboard/nmapdashboard/
