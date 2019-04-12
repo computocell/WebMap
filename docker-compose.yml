@@ -1,0 +1,9 @@
+version: '3.3'
+services: 
+  web:
+    image:  computocell/webmap
+    container_name: webmap
+    ports:
+    - "8000:8000"
+    volumes:
+      - ./webmap_temp:/opt/xml

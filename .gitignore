@@ -84,3 +84,10 @@ target/
 
 # webmap PDF report
 static/*.pdf
+RUN/xml/webmapsched_1555088027.547953_myscan.xml
+RUN/xml/ScanServidores_Banco_10.12.1.151-153.xml
+RUN/xml/ScanSubRede_10.12.16.xml
+RUN/xml/ScanSubRede_10.12.3.xml
+RUN/xml/ScanSubRede_10.12.4.xml
+RUN/xml/Scan_SubRede_10.12.1.xml
+RUN/xml/pcleo.xml

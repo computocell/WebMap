@@ -1,0 +1,14 @@
+version: '3.3'
+services: 
+  web:
+    image: computocell/webmap
+    container_name: webmap
+    ports:
+      - "8000:8000"
+    networks:
+      - development-network
+    volumes:
+      - ./xml:/opt/xml
+networks:
+  development-network:
+      driver: bridge 
