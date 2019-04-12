@@ -30,12 +30,12 @@ RUN mkdir /opt/xml && mkdir /opt/notes && \
 
 RUN pip3 install Django requests xmltodict && \
     cd /opt/ && django-admin startproject nmapdashboard && cd /opt/nmapdashboard && \
-    git clone https://jsoComputocell@bitbucket.org/jsoComputocell/webmap.git nmapreport && \
+    git clone https://github.com/computocell/WebMap.git nmapreport && \
     cd nmapreport && git checkout v2.2/master
 
 COPY settings.py /opt/nmapdashboard/nmapdashboard/
 COPY urls.py /opt/nmapdashboard/nmapdashboard/
-COPY vimrc /root/.vimrc
+#COPY vimrc /root/.vimrc
 COPY tzdata.sh /root/tzdata.sh
 COPY startup.sh /startup.sh
 
